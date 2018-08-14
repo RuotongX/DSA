@@ -1,8 +1,9 @@
 package task1CarParking;
 
 import java.time.LocalTime;
+import java.util.Scanner;
 
-public class CarList extends AbstractCarList implements CarInterface {
+public class CarList extends AbstractCarList implements CarInterface<Car> {
 	private Car[] cardata;
 	private int size;
 	public CarList() {
@@ -31,7 +32,7 @@ public class CarList extends AbstractCarList implements CarInterface {
 		if(index>=size||index<0)
 			throw new IndexOutOfBoundsException("Out Of Bound index");
 	}
-	private void add(int index, Car car) {
+	public void add(int index, Car car) {
 		rangeCheck(index);
 		if(elementCount+1<=size) {
 			for(int i=elementCount-1;i>=index;i--) {
@@ -59,16 +60,25 @@ public class CarList extends AbstractCarList implements CarInterface {
 			return true;
 		}
 	}
-	public void StartParking(int index) {
+	public Car indexOf(int index) {
 		rangeCheck(index);
-		Car car = (Car) cardata[index];
-		LocalTime localTime = LocalTime.now(); 
-		car.setStarttime(localTime.getHour()+":"+localTime.getMinute()+":"+localTime.getSecond()+":");
+		Car car = cardata[index];
+		return car;
 	}
-	public void EndParking(int index) {
-		rangeCheck(index);
-		Car car = (Car) cardata[index];
-		LocalTime localTime = LocalTime.now(); 
-		car.setStarttime(localTime.getHour()+":"+localTime.getMinute()+":"+localTime.getSecond()+":");
+	public int OccupiedCar() {
+		return elementCount;
+	}
+	public int AvaliableCar() {
+		return size-elementCount;
+	}
+	public int[] occupiedplace() {
+		int[] op = new int[elementCount];
+		int temp = 0;
+		for(int i = 0;i<20;i++) {
+			if(this.hasCar(i)) {
+				op[temp] = i;
+			}
+		}
+		return op;
 	}
 }

@@ -1,8 +1,21 @@
 package task1CarParking;
 
 public class CarPark {
-	private int column;
-	private int row;
-	private int[][] park = new int[4][5];
-	
+	private int column = 20;
+	private String[] park = new String[column];
+
+	public CarPark(CarList carlist) {
+		for (int j = 0; j < column; j++) {
+			int temp = j + 1;
+			park[j] = temp + "";
+		}
+		for (int k = 0; k < carlist.elementCount; k++) {
+			System.out.println(carlist.elementCount);
+			park[carlist.occupiedplace()[k]] = "OCCUP";
+		}
+		for (int c = 0; c < column; c++) {
+			System.out.print("["+this.park[c]+"]");
+		}
+		System.out.println();
+	}
 }

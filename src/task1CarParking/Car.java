@@ -1,5 +1,7 @@
 package task1CarParking;
 
+import java.time.LocalTime;
+
 public class Car {
 	private String starttime;
 	private String endtime;
@@ -57,5 +59,13 @@ public class Car {
 	}
 	public void setColumn(int column) {
 		this.column = column;
+	}
+	public void StartParking() {
+		LocalTime localTime = LocalTime.now(); 
+		this.setStarttime(localTime.getHour()+":"+localTime.getMinute()+":"+localTime.getSecond());
+	}
+	public void EndParking() {
+		LocalTime localTime = LocalTime.now(); 
+		this.setStarttime(localTime.getHour()+":"+localTime.getMinute()+":"+localTime.getSecond());
 	}
 }

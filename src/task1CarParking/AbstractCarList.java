@@ -1,7 +1,7 @@
 package task1CarParking;
 
 
-public abstract class AbstractCarList implements CarInterface{
+public abstract class AbstractCarList implements CarInterface<Car>{
 	protected int elementCount;
 	public boolean isEmpty() {
 		return elementCount == 0;
