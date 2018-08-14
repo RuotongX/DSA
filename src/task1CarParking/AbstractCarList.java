@@ -16,7 +16,7 @@ public abstract class AbstractCarList implements CarInterface<Car>{
 				Integer.valueOf(tokenEnd[1])*60+
 				Integer.valueOf(tokenEnd[2]);
 		int parkTime = 0;
-		double parkHour = 0.0;
+		double parkHour = 0;
 		if(timeEnd<timeStart) {
 			parkTime = 86400 - timeStart +timeEnd;
 		}
@@ -26,10 +26,10 @@ public abstract class AbstractCarList implements CarInterface<Car>{
 		parkTime = parkTime*100;
 		parkHour = parkTime/3600;
 		System.out.println("You have parked "+parkHour+" hours");
-		return parkTime;
+		return parkHour;
 	}
 	public void priceCalculator(double hour) {
-		if(hour<=1&&hour>0) {
+		if(hour<=1&&hour>=0) {
 			System.out.println("The parking price is $4");
 		}
 		else if(hour<=2&&hour>1) {

@@ -66,6 +66,6 @@ public class Car {
 	}
 	public void EndParking() {
 		LocalTime localTime = LocalTime.now(); 
-		this.setStarttime(localTime.getHour()+":"+localTime.getMinute()+":"+localTime.getSecond());
+		this.setEndtime(localTime.getHour()+":"+localTime.getMinute()+":"+localTime.getSecond());
 	}
 }

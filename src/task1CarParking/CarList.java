@@ -35,11 +35,11 @@ public class CarList extends AbstractCarList implements CarInterface<Car> {
 	public void add(int index, Car car) {
 		rangeCheck(index);
 		if(elementCount+1<=size) {
-			for(int i=elementCount-1;i>=index;i--) {
+			for(int i=elementCount-1;i>=index;i--) 
 				cardata[i+1]=cardata[i];
 				cardata[index] = car;
 				elementCount++;
-			}
+			
 		}
 	}
 	public Car remove(int index) { 
@@ -69,14 +69,15 @@ public class CarList extends AbstractCarList implements CarInterface<Car> {
 		return elementCount;
 	}
 	public int AvaliableCar() {
-		return size-elementCount;
+		return size-elementCount-1;
 	}
 	public int[] occupiedplace() {
 		int[] op = new int[elementCount];
 		int temp = 0;
-		for(int i = 0;i<20;i++) {
+		for(int i = 0;i<size;i++) {
 			if(this.hasCar(i)) {
-				op[temp] = i;
+			   op[temp] = i;
+			   temp++;
 			}
 		}
 		return op;
