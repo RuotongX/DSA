@@ -33,6 +33,7 @@ public class SortingSystem {
 			System.out.println("Invalid input");
 			System.err.println(e);
 		}
+		sc.close();
 	}
 
 	private static void Studentlist(StudentListSort sls) {
