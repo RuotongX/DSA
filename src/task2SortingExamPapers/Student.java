@@ -1,5 +1,10 @@
 package task2SortingExamPapers;
-
+/**
+ * This class just shows a student's attributes which assignment require us to do.
+ * It also has the getter and setter for each attribute.
+ * @author RuotongXu
+ *
+ */
 public class Student {
 	private int id;
 	private String fname;

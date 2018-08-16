@@ -1,6 +1,10 @@
 package task2SortingExamPapers;
 import java.util.Random;
-
+/**
+ * This class is used to generate a student list, the details information I show in the word file.
+ * @author RuotongXu
+ *
+ */
 public class StudentListSort {
 	private Student[] studentlist;
 	private int size = 51;

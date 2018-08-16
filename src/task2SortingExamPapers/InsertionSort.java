@@ -1,5 +1,9 @@
 package task2SortingExamPapers;
-
+/**
+ * This class is used to implement the insertion sort. The details about insertion sort I shown in the word file.
+ * @author RuotongXu
+ *
+ */
 public class InsertionSort {
 	StudentListSort studentlist;
 

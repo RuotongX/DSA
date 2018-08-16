@@ -1,6 +1,9 @@
 package task1CarParking;
-
-
+/**
+ * This class is an abstract class which implements the interface, just like the assignment required.
+ * @author RuotongXu
+ *
+ */
 public abstract class AbstractCarList implements CarInterface<Car>{
 	protected int elementCount;
 	public boolean isEmpty() {

@@ -1,5 +1,10 @@
 package task1CarParking;
-
+/**
+ * This class is used to display the car park( how many car in the car park and which position that car lies)
+ * The console output screen shot will show in the word file.
+ * @author RuotongXu
+ *
+ */
 public class CarPark {
 	private int column = 19;
 	private String[] park = new String[column];

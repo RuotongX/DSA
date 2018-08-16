@@ -1,7 +1,12 @@
 package task1CarParking;
-
 import java.time.LocalTime;
-
+/**
+ * This class just shows a car's attributes, and it contains the methods 'StartParking' and 'EndParking'
+ * which can get the system time and set the value for the car's attributes,
+ * this class also has the getter and setter for all the attributes;
+ * @author RuotongXu
+ *
+ */
 public class Car {
 	private String starttime;
 	private String endtime;

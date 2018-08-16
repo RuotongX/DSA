@@ -1,5 +1,9 @@
 package task2SortingExamPapers;
-
+/**
+ * This class is used to implement the merge sort, the details about how the merge sort work I shown in the word file.
+ * @author RuotongXu
+ *
+ */
 public class MergeSort {
 	private Student[] templist;
 	private int low = 1;

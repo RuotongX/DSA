@@ -1,6 +1,13 @@
 package task2SortingExamPapers;
 
 import java.util.Scanner;
+/**
+ * This class is the control panel of the sorting system, user will select which case 
+ * and the student list will display to them, then the sort result will display.
+ * Students also add to student list in this class.
+ * @author RuotongXu
+ *
+ */
 
 public class SortingSystem {
 	public static void main(String[] args) {

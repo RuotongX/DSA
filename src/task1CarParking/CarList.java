@@ -1,7 +1,10 @@
 package task1CarParking;
-
-import java.time.LocalTime;
-import java.util.Scanner;
+/**
+ * This class has implement the abstract class and interface, and it create a list for car,
+ * this details about How the list work I shown in the word file
+ * @author RuotongXu
+ *
+ */
 
 public class CarList extends AbstractCarList implements CarInterface<Car> {
 	private Car[] cardata;
