@@ -1,6 +1,11 @@
 package task1CarParking;
-
 import java.util.Scanner;
+/**
+ * This Class is used to get the input of the user comment, and it also contains the method to avoid a place can be parked more than one car.
+ * Hit: In this system, the time will be 100 times fast than the real time, which means 36s is one hour.(it is use for tutor to test the cost system)
+ * @author RuotongXu
+ *
+ */
 
 public class ParkingControl {
 	public static void main(String[] args) {
