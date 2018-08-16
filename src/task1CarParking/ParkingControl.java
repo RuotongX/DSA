@@ -94,7 +94,7 @@ public class ParkingControl {
 			car.StartParking();
 			
 			CarPark carpark1 = new CarPark(carlist);
-			System.out.println("Parking successfully! You park time is " + car.getStarttime());
+			System.out.println("You park time is " + car.getStarttime());
 		} catch (Exception e) {
 			System.out.println("Invaild input");
 			System.err.println(e);

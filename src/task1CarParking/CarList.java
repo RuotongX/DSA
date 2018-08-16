@@ -37,22 +37,20 @@ public class CarList extends AbstractCarList implements CarInterface<Car> {
 	}
 	public void add(int index, Car car) {
 		rangeCheck(index);
-		if(elementCount+1<=size) {
+		if(elementCount+1<size) {
 			for(int i=elementCount-1;i>=index;i--) 
 				cardata[i+1]=cardata[i];
 				cardata[index] = car;
 				elementCount++;
 			
+		} else {
+			System.out.println("Sorry, this car park is full, this car information will not store in Car park system.");
 		}
 	}
-	public Car remove(int index) { 
+	public void remove(int index) { 
         rangeCheck(index); 
-        Car oldValue = (Car) cardata[index]; 
-        for (int i=index; i<elementCount; i++)
-                cardata[i]=cardata[i+1];
-
-        cardata[--elementCount]=null;
-        return oldValue; 
+        cardata[index]=null;
+        elementCount --;
     }
 	public boolean hasCar(int index) {
 		rangeCheck(index);
