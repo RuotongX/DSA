@@ -33,7 +33,7 @@ public class SortingSystem {
 				System.out.println();
 				System.out.println();
 				System.out.println();
-				System.out.println("Here is the merge sort");
+				System.out.println("Here is the merge sort for student id.");
 				MergeSort ms = new MergeSort(sls);
 				break;
 			case 2:
@@ -42,7 +42,7 @@ public class SortingSystem {
 				System.out.println();
 				System.out.println();
 				System.out.println();
-				System.out.println("Here is the insertion sort");
+				System.out.println("Here is the insertion sort for student id.");
 				InsertionSort is = new InsertionSort(sls);
 				break;
 			}
