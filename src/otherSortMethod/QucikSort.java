@@ -1,4 +1,4 @@
-package testPackage;
+package otherSortMethod;
 
 public class QucikSort {
 	public static void main(String[] args) {
