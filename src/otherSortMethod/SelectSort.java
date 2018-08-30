@@ -2,7 +2,7 @@ package otherSortMethod;
 
 public class SelectSort {
 	public static void main(String[] args) {
-		int[] array = { 0, -5, -25, 257, 19, 25, 693, 13, 13, -8, 254 };
+		int[] array = { 0, -5, -25, 257, 19, 25, 693, 13, 13, -534, 254 };
 		selectsort(array);
 		for(int i = 0;i<array.length;i++) {
 			System.out.print(array[i]+",");
